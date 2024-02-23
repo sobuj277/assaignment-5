@@ -105,50 +105,221 @@
 </section>
 
 <!-- Ticket Selling Section -->
-<section class="py-8 flex justify-center items-start">
-
-    <!-- Select Your Seat Section -->
-    <div class="mr-8">
-        <h2 class="text-2xl mb-4">Select Your Seats</h2>
-        <div class="flex flex-wrap">
-            <!-- Seat List -->
-            <div class="grid grid-cols-10 gap-2" id="seatList">
-                <!-- Seat numbers provided directly in HTML -->
-                <div class="seat border rounded text-center" onclick="selectSeat(this)">A1</div>
-                <div class="seat border rounded text-center" onclick="selectSeat(this)">A2</div>
-                <div class="seat border rounded text-center" onclick="selectSeat(this)">A3</div>
-                <!-- Repeat for all seat numbers -->
-                <!-- For the sake of brevity, I'm only including a few seat numbers -->
-            </div>
-        </div>
+<section class="justfy-center item-center">
+    <div class="ticket-section-body bg-[#1DD100] w-full rounded-full">
+        <h1 class="py-10">.</h1>
     </div>
-
-    <!-- Right Side - Total Price and Passenger Information -->
-    <div>
-        <h2 class="text-2xl mb-4">Total Price & Passenger Information</h2>
-        <div class="border p-4 rounded">
-            <!-- Total Price -->
-            <div class="mb-4">
-                <p>Total Price: <span id="totalPrice">$0</span></p>
+        <div class="ticket-section-main bg-[#F7F8F8] rounded-3xl -mt-24">
+            <div class="ticket-section">
+                <div class="title">
+                    <h2 class="text-3xl font-semibold text-center py-10">Best Offer For You</h2>
+                <p class="text-center pb-12">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+                </div>
+                <div class="px-20">
+                    <div class="bus-info-section bg-white rounded-3xl flex mb-10">
+                        <div class="info-section">
+                            <div class="bus-info flex mx-10 py-10">
+                                <div class="bus flex">
+                                    <img src="images/bus-logo.png" alt="">
+                                    <div class="px-5">
+                                        <h2 class="font-semibold text-2xl">Greenline Paribahan</h2>
+                                        <p class="font-sm">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                <div class="bus-buttton">
+                                    <a class="btn btn-outline btn-success ml-20" href="">40 Seats left</a>
+                                </div>
+                            </div>
+                            <div class="route-section bg-[#F7F8F8] mx-10 rounded-3xl">
+                                <div class="flex justify-between mx-10 py-5">
+                                    <p>Route</p>
+                                    <p>Dhaka-Sirajganj</p>
+                                </div>
+                                <hr class="mx-10" style="border-top: 1px dashed black;">
+                                <div class="flex justify-between mx-10 py-5">
+                                    <p>Route</p>
+                                    <p>Dhaka-Sirajganj</p>
+                                </div>
+                                <hr class="mx-10" style="border-top: 1px dashed black;">
+                                <div class="info-button flex justify-around py-10">
+                                    <button class="btn">Button</button>
+                                    <button class="btn">Button</button>
+                                    <button class="btn">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-section">
+                            <img src="images/info-devider.png" alt="">
+                        </div>
+                        <div class="price-section">
+                            <img class="ml-24 pl-5 pt-24 pb-5" src="images/fare.png" alt="">
+                                <h1 class="ml-14 pb-5 text-center font-extrabold text-4xl">550 Taka</h1>
+                                <h1 class="ml-16 pb-5 font-bold text-xl text-center">Per Seat</h1>
+                        </div>
+                </div>
+                </div>
+                <div class="seling-section flex bg-white rounded-3xl mx-20">
+                    <!-- Select Your Seat Section -->
+            <div class="mr-8 px-10">
+                <h2 class="text-2xl mb-4">Select Your Seats</h2>
+                <div class="flex flex-wrap">
+                    <!-- Seat List -->
+                    <div class="grid grid-cols-6 gap-2" id="seatList">
+                                <!-- A Series Seat -->A
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A4</div>
+                                <!-- B Series Seat -->B
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B4</div>
+                                <!-- B Series Seat -->C
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->D
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->E
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->F
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->G
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->H
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->I
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                                <!-- B Series Seat -->J
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <br>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <!-- Repeat for all seat numbers -->
+                        <!-- For the sake of brevity, I'm only including a few seat numbers -->
+                    </div>
+                    
+                </div>
             </div>
-            <!-- Selected Seat Numbers -->
-            <div class="mb-4">
-                <p>Selected Seat(s): <span id="selectedSeats">None</span></p>
-            </div>
-            <!-- Passenger Information -->
+        
+            <!-- Right Side - Total Price and Passenger Information -->
             <div>
-                <!-- Passenger Name -->
-                <input type="text" id="passengerName" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Passenger Name">
-                <!-- Passenger Phone Number -->
-                <input type="text" id="passengerPhone" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Phone Number">
-                <!-- Buy Now Button - Hidden if passenger information is not provided -->
-                <button id="buyButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hidden">Buy Now</button>
+                <h2 class="text-2xl mb-4">Total Price & Passenger Information</h2>
+                <div class="border p-4 rounded">
+                    <!-- Total Price -->
+                    <div class="mb-4">
+                        <p>Total Price: <span id="totalPrice">$0</span></p>
+                    </div>
+                    <!-- Selected Seat Numbers -->
+                    <div class="mb-4">
+                        <p>Selected Seat(s): <span id="selectedSeats">None</span></p>
+                    </div>
+                    <!-- Passenger Information -->
+                    <div>
+                        <!-- Passenger Name -->
+                        <input type="text" id="passengerName" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Passenger Name">
+                        <!-- Passenger Phone Number -->
+                        <input type="text" id="passengerPhone" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Phone Number">
+                        <!-- Buy Now Button - Hidden if passenger information is not provided -->
+                        <button id="buyButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hidden">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+                </div>
             </div>
         </div>
-    </div>
+    <!--  -->
 </section>
 
+<!-- JavaScript -->
+<script>
+    // Function to handle seat selection
+    function selectSeat(seatElement) {
+        // Toggle selected class on click
+        seatElement.classList.toggle('selected');
+        // Update total price
+        updateTotalPrice();
+        // Update selected seat numbers
+        updateSelectedSeats();
+        // Show buy button if passenger information is provided
+        toggleBuyButton();
+    }
 
+    // Function to update total price based on selected seats
+    function updateTotalPrice() {
+        // Get all selected seats
+        const selectedSeats = document.querySelectorAll('.selected');
+        // Calculate total price (assumed $10 per seat)
+        const totalPrice = selectedSeats.length * 10;
+        // Update total price in the UI
+        document.getElementById('totalPrice').textContent = '$' + totalPrice;
+    }
+
+    // Function to update selected seat numbers
+    function updateSelectedSeats() {
+        // Get all selected seats
+        const selectedSeats = document.querySelectorAll('.selected');
+        // Create an array to store selected seat numbers
+        const selectedSeatNumbers = [];
+        // Loop through each selected seat and extract seat number
+        selectedSeats.forEach(seat => {
+            selectedSeatNumbers.push(seat.textContent);
+        });
+        // Update selected seat numbers in the UI
+        document.getElementById('selectedSeats').textContent = selectedSeatNumbers.join(', ');
+    }
+
+    // Function to toggle buy button visibility based on passenger information
+    function toggleBuyButton() {
+        // Get passenger name and phone number inputs
+        const passengerNameInput = document.getElementById('passengerName');
+        const passengerPhoneInput = document.getElementById('passengerPhone');
+        // Get buy button
+        const buyButton = document.getElementById('buyButton');
+        // Check if passenger name and phone number are provided
+        if (passengerNameInput.value.trim() !== '' && passengerPhoneInput.value.trim() !== '') {
+            // Show buy button
+            buyButton.classList.remove('hidden');
+        } else {
+            // Hide buy button
+            buyButton.classList.add('hidden');
+        }
+    }
+
+    // Event listener for passenger information inputs
+    document.getElementById('passengerName').addEventListener('input', toggleBuyButton);
+    document.getElementById('passengerPhone').addEventListener('input', toggleBuyButton);
+</script>
 
 </body>
 
