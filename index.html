@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       .seat {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #999;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        .selected {
+            background-color: #4CAF50 !important;
+            color: white;
+        }
+    </style>
+</head>
+<body class="container mx-auto px-14">
+
+<!-- Header Section -->
+<header class="text-black py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div>
+            <!-- <img src="logo.png" alt="Logo" class="h-10"> -->
+            <h1 class="text-5xl font-bold py-5">E-Ticket</h1>
+        </div>
+        <nav class="flex-1 text-center">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:text-yellow-200">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-200">About</a></li>
+                <li><a href="#" class="hover:text-yellow-200">Destination</a></li>
+                <li><a href="#" class="hover:text-yellow-200">Search</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button class="btn btn-outline btn-success font-bold">Bus <img src="images/bus-icon.png" alt=""></button>
+        </div>
+    </div>
+</header>
+
+<!-- Banner Section -->
+<section>
+    <div class="bg-[url(images/banner.png)] h-screen bg-no-repeat">
+        <div class="heading">
+            <h1 class="text-6xl font-extrabold text-center text-white pt-20">End-to-End Travel with</h1>
+            <h1 class="text-6xl font-extrabold text-center pt-8 text-lime-400">Green Line</h1>
+        </div>
+        <div class="descreption">
+            <p class="text-center text-white pt-4">Yes, you can run unit tests and view the results directly within the app. The <br>
+                integrated testing features allow for a streamlined .</p>
+        </div>
+        <div class="w-full mx-60">
+            <button class="btn btn-accent mt-5 mx-60 font-extrabold">Buy Tickets</button>
+        </div>
+    </div>
+</section>
+
+<section class="py-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold">Best Offer For You</h2>
+        <div class="flex justify-center space-x-4 mt-4">
+            <div class="bg-amber-400 rounded-md shadow-md flex px-6">
+                <div class="heading">
+                    <h1 class="text-4xl font-extrabold pt-10">15% OFF</h1>
+                    <h1 class="text-xl font-bold">on your next purchase</h1>
+                    <h1 class="font-bold">use by January 2024</h1>
+                </div>
+                <div class="divader">
+                    <img class="h-full" src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="code">
+                    <h1 class="text-4xl font-extrabold pt-14">NEW15</h1>
+                    <h1 class="font-bold">use by January 2024</h1>
+                </div>
+            </div>
+            <div class="bg-amber-400 rounded-md shadow-md flex px-6">
+                <div class="heading">
+                    <h1 class="text-4xl font-extrabold pt-10">15% OFF</h1>
+                    <h1 class="text-xl font-bold">on your next purchase</h1>
+                    <h1 class="font-bold">use by January 2024</h1>
+                </div>
+                <div class="divader">
+                    <img class="h-full" src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="code">
+                    <h1 class="text-4xl font-extrabold pt-14">NEW15</h1>
+                    <h1 class="font-bold">use by January 2024</h1>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-outline btn-success mt-10 font-bold">See All Offers</button>
+    </div>
+</section>
+
+<!-- Ticket Selling Section -->
+<section class="py-8 flex justify-center items-start">
+
+    <!-- Select Your Seat Section -->
+    <div class="mr-8">
+        <h2 class="text-2xl mb-4">Select Your Seats</h2>
+        <div class="flex flex-wrap">
+            <!-- Seat List -->
+            <div class="grid grid-cols-10 gap-2" id="seatList">
+                <!-- Seat numbers provided directly in HTML -->
+                <div class="seat border rounded text-center" onclick="selectSeat(this)">A1</div>
+                <div class="seat border rounded text-center" onclick="selectSeat(this)">A2</div>
+                <div class="seat border rounded text-center" onclick="selectSeat(this)">A3</div>
+                <!-- Repeat for all seat numbers -->
+                <!-- For the sake of brevity, I'm only including a few seat numbers -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side - Total Price and Passenger Information -->
+    <div>
+        <h2 class="text-2xl mb-4">Total Price & Passenger Information</h2>
+        <div class="border p-4 rounded">
+            <!-- Total Price -->
+            <div class="mb-4">
+                <p>Total Price: <span id="totalPrice">$0</span></p>
+            </div>
+            <!-- Selected Seat Numbers -->
+            <div class="mb-4">
+                <p>Selected Seat(s): <span id="selectedSeats">None</span></p>
+            </div>
+            <!-- Passenger Information -->
+            <div>
+                <!-- Passenger Name -->
+                <input type="text" id="passengerName" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Passenger Name">
+                <!-- Passenger Phone Number -->
+                <input type="text" id="passengerPhone" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Phone Number">
+                <!-- Buy Now Button - Hidden if passenger information is not provided -->
+                <button id="buyButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hidden">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+
+</html>
