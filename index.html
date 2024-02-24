@@ -22,7 +22,7 @@
         }
 
         .selected {
-            background-color: #4CAF50 !important;
+            background-color: #1DD100 !important;
             color: white;
         }
     </style>
@@ -70,8 +70,8 @@
 <section class="py-8">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold">Best Offer For You</h2>
-        <div class="flex justify-center space-x-4 mt-4">
-            <div class="bg-amber-400 rounded-md shadow-md flex px-6">
+        <div class="flex justify-center space-x-4 mt-4 gap-8">
+            <div class="bg-[#FFBF0F] rounded-md shadow-md flex px-6">
                 <div class="heading">
                     <h1 class="text-4xl font-extrabold pt-10">15% OFF</h1>
                     <h1 class="text-xl font-bold">on your next purchase</h1>
@@ -85,9 +85,9 @@
                     <h1 class="font-bold">use by January 2024</h1>
                 </div>
             </div>
-            <div class="bg-amber-400 rounded-md shadow-md flex px-6">
+            <div class="bg-[#F78C9C] rounded-md shadow-md flex px-6">
                 <div class="heading">
-                    <h1 class="text-4xl font-extrabold pt-10">15% OFF</h1>
+                    <h1 class="text-4xl font-extrabold pt-10">20% OFF</h1>
                     <h1 class="text-xl font-bold">on your next purchase</h1>
                     <h1 class="font-bold">use by January 2024</h1>
                 </div>
@@ -95,7 +95,7 @@
                     <img class="h-full" src="images/cupon-devider.png" alt="">
                 </div>
                 <div class="code">
-                    <h1 class="text-4xl font-extrabold pt-14">NEW15</h1>
+                    <h1 class="text-4xl font-extrabold pt-14">Couple 20</h1>
                     <h1 class="font-bold">use by January 2024</h1>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                                     <img src="images/bus-logo.png" alt="">
                                     <div class="px-5">
                                         <h2 class="font-semibold text-2xl">Greenline Paribahan</h2>
-                                        <p class="font-sm">Coach-009-WEB ! AC_Business</p>
+                                        <p class="font-medium">Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
                                 <div class="bus-buttton">
@@ -132,19 +132,19 @@
                             </div>
                             <div class="route-section bg-[#F7F8F8] mx-10 rounded-3xl">
                                 <div class="flex justify-between mx-10 py-5">
-                                    <p>Route</p>
-                                    <p>Dhaka-Sirajganj</p>
+                                    <p class="font-medium">Route</p>
+                                    <p class="font-medium">Dhaka-Sirajganj</p>
                                 </div>
                                 <hr class="mx-10" style="border-top: 1px dashed black;">
                                 <div class="flex justify-between mx-10 py-5">
-                                    <p>Route</p>
-                                    <p>Dhaka-Sirajganj</p>
+                                    <p class="font-medium">Departure Time</p>
+                                    <p class="font-medium">9:00 AM</p>
                                 </div>
                                 <hr class="mx-10" style="border-top: 1px dashed black;">
                                 <div class="info-button flex justify-around py-10">
-                                    <button class="btn">Button</button>
-                                    <button class="btn">Button</button>
-                                    <button class="btn">Button</button>
+                                    <button class="btn">B. Point - Dhaka</button>
+                                    <button class="btn">D. Point - Sirajganj</button>
+                                    <button class="btn">Est. Time - 3 Hour</button>
                                 </div>
                             </div>
                         </div>
@@ -160,71 +160,84 @@
                 </div>
                 <div class="seling-section flex bg-white rounded-3xl mx-20">
                     <!-- Select Your Seat Section -->
-            <div class="mr-8 px-10">
+            <div class="mr-8 px-10 py-10">
                 <h2 class="text-2xl mb-4">Select Your Seats</h2>
+                <hr class="" style="border-top: 1px dashed black;">
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img src="images/seat-gray.png" alt="">
+                        <h1 class="font-semibold">Available</h1>
+                    </div>
+                    <div class="flex">
+                        <img src="images/seat-green.png" alt="">
+                        <h1 class="font-semibold">Selected</h1>
+                    </div>
+                </div>
+                <hr class="mb-5" style="border-top: 1px dashed black;">
+                <img src="images/" alt="">
                 <div class="flex flex-wrap">
                     <!-- Seat List -->
                     <div class="grid grid-cols-6 gap-2" id="seatList">
                                 <!-- A Series Seat -->A
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">A4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->B
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">B4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->C
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->D
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->E
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->F
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->G
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->H
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->I
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                                 <!-- B Series Seat -->J
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C1<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C2<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <br>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3</div>
-                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4</div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C3<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
+                        <div class="seat border rounded text-center" onclick="selectSeat(this)">C4<h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Economoy</h1><h1 class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;550</h1></div>
                         <!-- Repeat for all seat numbers -->
                         <!-- For the sake of brevity, I'm only including a few seat numbers -->
                     </div>
@@ -233,25 +246,35 @@
             </div>
         
             <!-- Right Side - Total Price and Passenger Information -->
-            <div>
+            <div class="py-10 ml-20">
                 <h2 class="text-2xl mb-4">Total Price & Passenger Information</h2>
-                <div class="border p-4 rounded">
-                    <!-- Total Price -->
-                    <div class="mb-4">
-                        <p>Total Price: <span id="totalPrice">$0</span></p>
+                <hr class="mb-5" style="border-top: 1px dashed black;">
+                <div class="bg-[#F7F8F8] p-4 rounded">
+                    <div class="flex justify-around pb-3">
+                        <p class="font-semibold">Seat<span class="bg-[#1DD100] px-1 rounded text-white" id="selectedSeatsCount">0</span></p>
+                        <p class="font-semibold">Class</p>
+                        <p class="font-semibold">Price</p>
+                    </div>
+                    <hr class="pb-3" style="border-top: 1px dashed black;">
+                    <div class="flex justify-around">
+                        <p>
+                            <div class="mb-4">
+                                <ul id="selectedSeatsList"></ul>
+                            </div>
+                        </p>
+                    </div>
+                    <hr class="pt-5" style="border-top: 1px dashed black;">
+                    <div class="mb-4 flex justify-around">
+                        <p class="font-bold">Grand Total</p>
+                        <p class="font-bold"><span id="totalPrice">$0</span></p>
                     </div>
                     <!-- Selected Seat Numbers -->
-                    <div class="mb-4">
-                        <p>Selected Seat(s): <span id="selectedSeats">None</span></p>
-                    </div>
+                    
                     <!-- Passenger Information -->
                     <div>
-                        <!-- Passenger Name -->
                         <input type="text" id="passengerName" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Passenger Name">
-                        <!-- Passenger Phone Number -->
                         <input type="text" id="passengerPhone" class="w-full mb-4 px-2 py-1 border rounded" placeholder="Phone Number">
-                        <!-- Buy Now Button - Hidden if passenger information is not provided -->
-                        <button id="buyButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hidden">Buy Now</button>
+                        <a id="buyButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hidden" href="#">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -264,6 +287,7 @@
 <!-- JavaScript -->
 <script>
     // Function to handle seat selection
+    
     function selectSeat(seatElement) {
         // Toggle selected class on click
         seatElement.classList.toggle('selected');
@@ -271,6 +295,9 @@
         updateTotalPrice();
         // Update selected seat numbers
         updateSelectedSeats();
+        updateSelectedSeats();
+        updateTotalSeatCount();
+        updateSelectedSeatsCount()
         // Show buy button if passenger information is provided
         toggleBuyButton();
     }
@@ -280,7 +307,7 @@
         // Get all selected seats
         const selectedSeats = document.querySelectorAll('.selected');
         // Calculate total price (assumed $10 per seat)
-        const totalPrice = selectedSeats.length * 10;
+        const totalPrice = selectedSeats.length * 550;
         // Update total price in the UI
         document.getElementById('totalPrice').textContent = '$' + totalPrice;
     }
@@ -298,6 +325,38 @@
         // Update selected seat numbers in the UI
         document.getElementById('selectedSeats').textContent = selectedSeatNumbers.join(', ');
     }
+
+    // Function to update total seat count
+    function updateTotalSeatCount() {
+            // Get total number of seats
+            const totalSeats = document.querySelectorAll('.seat').length;
+            // Update total seat count in the UI
+            document.getElementById('totalSeatCount').textContent = totalSeats;
+        }
+
+        // Function to update selected seat count
+        function updateSelectedSeatsCount() {
+            // Get all selected seats
+            const selectedSeatsCount = document.querySelectorAll('.selected').length;
+            // Update selected seat count in the UI
+            document.getElementById('selectedSeatsCount').textContent = selectedSeatsCount;
+        }
+
+        // Function to update selected seat numbers
+        function updateSelectedSeats() {
+            // Get all selected seats
+            const selectedSeats = document.querySelectorAll('.selected');
+            // Get the selected seats list element
+            const selectedSeatsList = document.getElementById('selectedSeatsList');
+            // Clear previous content
+            selectedSeatsList.innerHTML = '';
+            // Loop through each selected seat and add to the list
+            selectedSeats.forEach(seat => {
+                const listItem = document.createElement('li');
+                listItem.textContent = seat.textContent;
+                selectedSeatsList.appendChild(listItem);
+            });
+        }
 
     // Function to toggle buy button visibility based on passenger information
     function toggleBuyButton() {
